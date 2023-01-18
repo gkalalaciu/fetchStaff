@@ -6,7 +6,6 @@ I want:
 - fetch the .JSON file, for each staff, **add it to the STAFF content** (So, we will be able now to modify it via Druapl Admin panel)
 - fetch the .JSON file, for each staff, **create the corresponding .html.twig file** like this: ``facultyName/staffName.html.twig``
 
-You will find the .JSON file sample and the twig file sample.
+You will find the .JSON file sample and the twig file sample attached.
 
-PROBLEMS:
-- I can create the twig file.
+
