@@ -1,0 +1,167 @@
+<article{{ attributes.addClass('ciu-staff-profile') }}>
+  <div{{ content_attributes.addClass('container') }}>
+
+    <div class="row">
+      {# Image #}
+      <div class="col-md-5 ciu-staff-profile__image">
+        Staff Profile Images Here
+      </div>
+      {# End Image #}
+
+      {# name and faculty #}
+      <div class="col-md-7">
+
+        <h1 class="ciu-staff-profile__name">{{profiles.0.personnel_title_en}} {{profiles.0.p_firstname}} {{profiles.0.p_surname}}</h1>
+        <h2 class="ciu-staff-profile__faculty">{{faculties.0.faculty_en}}</h2>
+
+        {# Email and Telephone number #}
+        <div class="row">
+          <div class="col-md-6">
+        <span class="ciu-staff-profile__info"><strong>{{"Email"|t}}</strong>
+          {{ profiles.0.email }}</span>
+          </div>
+
+          <div class="col-md-6">
+        <span class="ciu-staff-profile__info"><strong>{{"Telephone number"|t}}</strong>
+          {{ telephone }}</span>
+          </div>
+        </div>
+        {# End Email and Telephone number #}
+
+        {# Extension and Office.no #}
+        <div class="row">
+          <div class="col-md-6">
+            <span class="ciu-staff-profile__info"><strong>{{"Extension"|t}}</strong>
+              {{ extensions.0 }}</span>
+          </div>
+
+          <div class="col-md-6">
+            <span class="ciu-staff-profile__info"><strong>{{"Office No."|t}}</strong>
+              {{ office_nos.0 }}</span>
+          </div>
+        </div>
+        {# End Extension and Office.no #}
+
+        {# Other Information #}
+        <div class="row">
+          <div class="col-md-6">
+            <span class="ciu-staff-profile__info">
+              <strong>{{"Other information"|t}}</strong>
+              <ul class="ciu-staff-profile__social">
+                  {% for social in other_informations.0 %}
+                    {# check as manu staff profiles as possible to discover all type of socials that can be available #}
+                    <li>{% if social.other_information_type_en == 'Scopus' %}
+                              <a href="{{ social.description_en }}"><img src="{{ base_path ~ directory }}/img/icons/scopus.svg" alt="{{ social.other_information_type_en }}" /></a>
+                          {% elseif social.other_information_type_en == 'LinkedIn' %}
+                        <a href="{{ social.description_en }}"><img src="{{ base_path ~ directory }}/img/icons/linkedin-color.svg" alt="{{ social.other_information_type_en }}" /></a>
+                          {% elseif social.other_information_type_en == 'Google Scholar' %}
+                        <a href="{{ social.description_en }}"><img src="{{ base_path ~ directory }}/img/icons/google-scholar.svg" alt="{{ social.other_information_type_en }}" /></a>
+                          {% elseif social.other_information_type_en == 'ResearchGate' %}
+                        <a href="{{ social.description_en }}"><img src="{{ base_path ~ directory }}/img/icons/research-gate.svg" alt="{{ social.other_information_type_en }}" /></a>
+                          {% else %}
+                        <a href="{{ social.description_en }}">{{ social.other_information_type }}</a>
+                      {% endif %}
+                      </li>
+                  {% endfor %}
+              </ul>
+            </span>
+          </div>
+        </div>
+        {# End Other Information #}
+
+      </div>
+      {# End name and faculty #}
+    </div>
+
+    {# More Informations #}
+    <div>
+      <div>
+        <h4>{{"More information"|t}}</h4>
+
+        {# content.field_education_information #}
+        {% if education_informations.0 is iterable %}
+          <div class="accordion" data-accordion>
+            <div class="ciu-accordion__trigger" data-accordion-trigger>{{"Education information"|t}}</div>
+            <div class="accordion__content" data-accordion-content>
+              <ul>
+                {% for education in education_informations.0 %}
+                  <li>
+                    <strong>{{ education.university_en }}</strong>
+                    {{ education.department_en }}
+                    ({{ education.title+en }}, {{ education.start_year }})
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endif %}
+
+        {# content.field_publications #}
+        {% if publications.0 is iterable %}
+          <div class="accordion" data-accordion>
+            <div class="ciu-accordion__trigger" data-accordion-trigger>{{"Publications"|t}}</div>
+            <div class="accordion__content" data-accordion-content>
+              {% for publication in publications.0 %}
+                <div class="ciu-staff-profile__publication">
+                  {% if publication.publication_type_en == 'Articles published in peer reviewed international journals (SCI,SSCI,Arts and Humanities)' %}
+                    <p>{{ "Articles published in peer reviewed international journals (SCI,SSCI,Arts and Humanities)"|t }}</p>
+                    <ul>
+                      <li>{{ publication.description_en }}{% if publication.publication_year %} - {{ publication.publication_year }}{% endif %}</li>
+                    </ul>
+                  {% elseif publication.publication_type_en == 'Papers presented in international conferences and printed as proceedings' %}
+                    <p> {{ "Papers presented in international conferences and printed as proceedings"|t }} </p>
+                    <ul>
+                      <li>{{ publication.description_en }}{% if publication.publication_year %} - {{ publication.publication_year }}{% endif %}</li>
+                    </ul>
+                  {% elseif publication.publication_type_en == 'Papers presented in National conferences and printed as proceedings' %}
+                    <p> {{ "Papers presented in National conferences and printed as proceedings"|t }} </p>
+                    <ul>
+                      <li>{{ publication.description_en }}{% if publication.publication_year %} - {{ publication.publication_year }}{% endif %}</li>
+                    </ul>
+                  {% elseif publication.publication_type_en == 'Books and books chapters published nationally' %}
+                    <p> {{ "Books and books chapters published nationally"|t }} </p>
+                    <ul>
+                      <li>{{ publication.description_en }}{% if publication.publication_year %} - {{ publication.publication_year }}{% endif %}</li>
+                    </ul>
+                  {% elseif publication.publication_type_en == 'Articles published in other peer reviewed international journals' %}
+                    <p> {{ "Articles published in other peer reviewed international journals"|t }} </p>
+                    <ul>
+                      <li>{{ publication.description_en }}{% if publication.publication_year %} - {{ publication.publication_year }}{% endif %}</li>
+                    </ul>
+                  {% elseif publication.publication_type_en == 'Other Publications' %}
+                    <p> {{ "Other Publications"|t }} </p>
+                    <ul>
+                      <li>{{ publication.description_en }}{% if publication.publication_year %} - {{ publication.publication_year }}{% endif %}</li>
+                    </ul>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+        {# content.field_theses #}
+        {% if theses.0 is iterable %}
+          <div class="accordion" data-accordion>
+              <div class="ciu-accordion__trigger" data-accordion-trigger>{{"Thesis"|t}}</div>
+              <div class="accordion__content" data-accordion-content>
+                  {% for thesis_type_en,theses in theses.0 %}
+                      <div class="ciu-staff-profile__theses">
+                          <p>{{ theses.thesis_type_en }}</p>
+                          <ul>
+                              {% for thesis in theses %}
+                                  <li>{{ thesis.description_en }}{% if thesis.publication_year %} - {{ thesis.publication_year }}{% endif %}</li>
+                              {% endfor %}
+                          </ul>
+                      </div>
+                  {% endfor %}
+              </div>
+          </div>
+        {% endif %}
+
+
+      </div>
+    </div>
+    {# More Informations #}
+  </div>
+</article>

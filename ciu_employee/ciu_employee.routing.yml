@@ -1,0 +1,7 @@
+ciu_employee.employeelist:
+  path: '/employeelist'
+  defaults:
+    _controller: '\Drupal\ciu_employee\Controller\convertEmployeeJSONController::extractValues'
+    _title: 'Employee List'
+  requirements:
+    _permission: 'access content'
