@@ -1,0 +1,190 @@
+{
+    "profile": {
+      "p_firstname": "Fadil",
+      "p_surname": "TAZIC OKYU",
+      "personnel_title_tr": "Öğr. Gör.",
+      "personnel_title_en": "Sr. Instr.",
+      "personnel_status_tr": "Tam Zamanlı",
+      "pt_sort": 5,
+      "person_id": 26121,
+      "personnel_id": 109,
+      "nationality_id": 2,
+      "email": "fokyu@ciu.edu.tr"
+    },
+    "faculties": [
+      {
+        "sort_order": 5,
+        "role_in_faculty_en": "Instructor",
+        "role_in_faculty_tr": "Öğretim Elemanı",
+        "role_in_faculty_id": 7,
+        "sort": 100,
+        "faculty_en": "School of Foreign Languages",
+        "faculty_tr": "Yabancı Diller Yüksekokulu",
+        "faculty_id": 631
+      }
+    ],
+    "personnel_titles": [
+      {
+        "definition_tr": "Yrd. Doç. Dr.",
+        "definition_en": "Asst. Prof. Dr.",
+        "title_date": null
+      },
+      {
+        "definition_tr": "Doç. Dr.",
+        "definition_en": "Assoc. Prof. Dr.",
+        "title_date": null
+      },
+      {
+        "definition_tr": "Prof. Dr.",
+        "definition_en": "Prof. Dr.",
+        "title_date": null
+      }
+    ],
+    "theses": [],
+    "education_information": [
+      {
+        "university_tr": "Hacettepe University",
+        "university_en": "Hacettepe University",
+        "department_tr": "English Linguistics",
+        "department_en": "English Linguistics",
+        "start_year": null,
+        "year": 1995,
+        "title_tr": "Lisans",
+        "title_en": "Undergraduate"
+      },
+      {
+        "university_tr": "Cyprus International University",
+        "university_en": "Cyprus International University",
+        "department_tr": "English Language Teaching",
+        "department_en": "English Language Teaching",
+        "start_year": null,
+        "year": 2009,
+        "title_tr": "Yüksek Lisans",
+        "title_en": "Master"
+      }
+    ],
+    "publications": [],
+    "projects": [],
+    "administrative_duties": [
+      {
+        "description_tr": "Fakülte Kordinatörü",
+        "description_en": "Faculty Coordinator",
+        "date": null,
+        "description": "Faculty Coordinator"
+      }
+    ],
+    "memberships": [],
+    "awards": [],
+    "other_information": [
+      {
+        "other_information_type_tr": "Google Scholar",
+        "other_information_type_en": "Google Scholar",
+        "description_tr": "https://scholar.google.com/citations?user=WMNhMNQAAAAJ&hl=en",
+        "description_en": "https://scholar.google.com/citations?user=WMNhMNQAAAAJ&hl=en"
+      },
+      {
+        "other_information_type_tr": "LinkedIn",
+        "other_information_type_en": "LinkedIn",
+        "description_tr": "fokyu@ciu.edu.tr",
+        "description_en": "fokyu@ciu.edu.tr"
+      }
+    ],
+    "research_areas": [],
+    "extension": "2859",
+    "office_no": "EHK13"
+  },
+  {
+    "profile": {
+      "p_firstname": "Fadil",
+      "p_surname": "TAZIC OKYU",
+      "personnel_title_tr": "Öğr. Gör.",
+      "personnel_title_en": "Sr. Instr.",
+      "personnel_status_tr": "Tam Zamanlı",
+      "pt_sort": 5,
+      "person_id": 26121,
+      "personnel_id": 109,
+      "nationality_id": 2,
+      "email": "fokyu@ciu.edu.tr"
+    },
+    "faculties": [
+      {
+        "sort_order": 5,
+        "role_in_faculty_en": "Instructor",
+        "role_in_faculty_tr": "Öğretim Elemanı",
+        "role_in_faculty_id": 7,
+        "sort": 100,
+        "faculty_en": "School of Foreign Languages",
+        "faculty_tr": "Yabancı Diller Yüksekokulu",
+        "faculty_id": 631
+      }
+    ],
+    "personnel_titles": [
+      {
+        "definition_tr": "Yrd. Doç. Dr.",
+        "definition_en": "Asst. Prof. Dr.",
+        "title_date": null
+      },
+      {
+        "definition_tr": "Doç. Dr.",
+        "definition_en": "Assoc. Prof. Dr.",
+        "title_date": null
+      },
+      {
+        "definition_tr": "Prof. Dr.",
+        "definition_en": "Prof. Dr.",
+        "title_date": null
+      }
+    ],
+    "theses": [],
+    "education_information": [
+      {
+        "university_tr": "Hacettepe University",
+        "university_en": "Hacettepe University",
+        "department_tr": "English Linguistics",
+        "department_en": "English Linguistics",
+        "start_year": null,
+        "year": 1995,
+        "title_tr": "Lisans",
+        "title_en": "Undergraduate"
+      },
+      {
+        "university_tr": "Cyprus International University",
+        "university_en": "Cyprus International University",
+        "department_tr": "English Language Teaching",
+        "department_en": "English Language Teaching",
+        "start_year": null,
+        "year": 2009,
+        "title_tr": "Yüksek Lisans",
+        "title_en": "Master"
+      }
+    ],
+    "publications": [],
+    "projects": [],
+    "administrative_duties": [
+      {
+        "description_tr": "Fakülte Kordinatörü",
+        "description_en": "Faculty Coordinator",
+        "date": null,
+        "description": "Faculty Coordinator"
+      }
+    ],
+    "memberships": [],
+    "awards": [],
+    "other_information": [
+      {
+        "other_information_type_tr": "Google Scholar",
+        "other_information_type_en": "Google Scholar",
+        "description_tr": "https://scholar.google.com/citations?user=WMNhMNQAAAAJ&hl=en",
+        "description_en": "https://scholar.google.com/citations?user=WMNhMNQAAAAJ&hl=en"
+      },
+      {
+        "other_information_type_tr": "LinkedIn",
+        "other_information_type_en": "LinkedIn",
+        "description_tr": "fokyu@ciu.edu.tr",
+        "description_en": "fokyu@ciu.edu.tr"
+      }
+    ],
+    "research_areas": [],
+    "extension": "2859",
+    "office_no": "EHK13"
+  }
